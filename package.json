@@ -1,0 +1,58 @@
+{
+  "name": "saas-user-management",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "SaaS User Management & Subscription System with React frontend and Express backend",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "vite",
+    "dev:server": "nodemon server/server.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server/server.js",
+    "seed:admin": "node server/seedAdmin.js",
+    "vercel-build": "vite build",
+    "test": "node --test",
+    "check": "npm run test && npm run build"
+  },
+  "keywords": [
+    "saas",
+    "user-management",
+    "subscription",
+    "react",
+    "express",
+    "mongodb",
+    "vercel"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.5"
+  },
+  "dependencies": {
+    "axios": "^1.21.0",
+    "bcryptjs": "^3.0.3",
+    "concurrently": "^10.0.6",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.2",
+    "express-validator": "^7.3.2",
+    "framer-motion": "^14.7.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.4",
+    "nodemon": "^3.1.14",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-hot-toast": "^2.6.1",
+    "react-icons": "^5.7.0",
+    "react-router-dom": "^7.18.5"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
